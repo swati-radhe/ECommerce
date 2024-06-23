@@ -12,6 +12,12 @@ class LoginController extends Controller
     public function getLogin()
     {
         try {
+            if (Auth::check()) {
+
+                return redirect()->intended('/getproduct');
+            }
+            session()->forget('_old_input');
+    
             return view('login');
         } catch (Exception $e) {
         }
@@ -29,9 +35,9 @@ class LoginController extends Controller
             // dd($credentials);
 
             if ($user->Type === "Admin") {
-                return redirect()->intended('');
+                // return redirect()->intended('');
             } else {
-                return redirect()->intended('/dashboard');
+                return redirect()->intended('/getproduct');
             }
         }
 

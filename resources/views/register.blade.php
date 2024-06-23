@@ -225,7 +225,7 @@
 
                                         <div class="d-flex justify-content-end pt-3" style="display: flex; justify-content: flex-end; gap: 7rem;">
 
-                                            <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-light btn-lg" onclick="window.location.href='/Login';">SignIn</button>
+                                            <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-light btn-lg" onclick="window.location.href='/login';">SignIn</button>
                                             <button type="submit" class="btn btn-primary btn-lg ">Sign Up</button>
                                             <!-- <input type="submit" class="btn btn-primary btn-lg " value="SignUp"> -->
                                         </div>
